@@ -9,7 +9,6 @@
 ## Resources
 * Watch [funfunfunction functional programming video series]
 * Read [what is functional programming]
-* Read [Why functional programming](https://github.com/getify/Functional-Light-JS/blob/master/ch1.md)
 * Skim [functional programming jargon]
 
 ## Outline
