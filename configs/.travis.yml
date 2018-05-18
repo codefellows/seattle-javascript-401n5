@@ -4,9 +4,4 @@ node_js:
 
 script:
   - npm run lint
-<<<<<<< HEAD
   - npm test
-
-=======
-  - npm test
->>>>>>> 3c939f1988b43e47a9e79bfca2e2034510448d41
