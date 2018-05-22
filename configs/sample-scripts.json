@@ -1,0 +1,7 @@
+{
+  "directions":"Add below scripts to scripts section in package.json file"
+  "scripts": {
+    "lint": "eslint **/.js",
+    "test": "jest"
+  }
+}
