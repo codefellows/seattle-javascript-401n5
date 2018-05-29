@@ -9,7 +9,7 @@ const uuid = require('uuid/v4');
 
 const port = process.env.PORT || 3001;
 const server = net.createServer();
-const events = new EventEmitter();
+const eventEmitter = new EventEmitter();
 const socketPool = {};
 
 /**
@@ -73,7 +73,7 @@ let parse = (buffer) => {
  */
 let dispatchAction = (userId, buffer) => {
   let entry = parse(buffer);
-  entry && events.emit(entry.command, entry, userId);
+  entry && eventEmitter.emit(entry.command, entry, userId);
 };
 
 /**
@@ -83,18 +83,18 @@ let dispatchAction = (userId, buffer) => {
  * conditional logic, just listeners
  */
 
-events.on('@all', (data, userId) => {
+eventEmitter.on('@all', (data, userId) => {
   for( let connection in socketPool ) {
     let user = socketPool[connection];
     user.socket.write(`<${socketPool[userId].nickname}>: ${data.payload}\n`);
   }
 });
 
-events.on('@nick', (data, userId) => {
+eventEmitter.on('@nick', (data, userId) => {
   socketPool[userId].nickname = data.target;
 });
 
-events.on('@dm', (data, userId) => {
+eventEmitter.on('@dm', (data, userId) => {
   // data.target == who it's going to
   // data.message == the message
   // find socketPool[target].socket.write(message);
