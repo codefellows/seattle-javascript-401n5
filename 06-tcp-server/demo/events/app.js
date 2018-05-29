@@ -7,6 +7,6 @@
  */
 let EE = require('events');
 
-let events = new EE();
+let eventEmitter = new EE();
 
-module.exports = events;
+module.exports = eventEmitter;
