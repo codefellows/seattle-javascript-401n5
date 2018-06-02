@@ -44,21 +44,3 @@ The HTTP specification describes an interface for making requests to an HTTP ser
 
 ### Server Side Routers
 Server side routers provide an interface to define how a server should respond to a given endpoint. An endpoint is defined as a HTTP method in combination with a URI path. Routers help simplify complexity and increase readability.
-
-### Promises
-Promises are objects that represent an asynchronous event that will either succeed or fail. They are an amazing tool for improving readability and data flow control between synchronous and asynchronous code.
-
-##### States of a Promise
-  * **pending** - initial state - not fulfilled or rejected
-  * **fulfilled** - the operation completed successfully
-  * **rejected** - the operation failed
-
-##### Promise Static Methods
-  * `Promise.all(array)` - returns a `Promise` object that fulfills when all of the promises in an array have succeded or one has failed
-  * `Promise.race(array)` - returns a `Promise` object that fulfills when one of the promises in an array has succeded or failed
-  * `Promise.reject(value)` - returns a `Promise` object that is rejected with a given value
-  * `Promise.resolve(value)` - returns a `Promise` object that is resolved with a given value
-
-##### Promise Instance Methods
-  * `catch((err) => {})` - registers a callback for handling a failure
-  * `then((data) => {})` - registers a callback for handling a success
