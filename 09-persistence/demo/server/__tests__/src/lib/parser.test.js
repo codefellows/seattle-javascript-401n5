@@ -29,8 +29,8 @@ describe('URL Parser', () => {
     let req = { method:'GET', url: 'http://localhost?a=b&c=d' };
     return parser(req)
       .then( request => {
-        expect(request.url.query.a).toEqual('b');
-        expect(request.url.query.c).toEqual('d');
+        expect(request.query.a).toEqual('b');
+        expect(request.query.c).toEqual('d');
       })
       .catch( console.error );
   });
