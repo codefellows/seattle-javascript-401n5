@@ -1,4 +1,4 @@
-![cf](http://i.imgur.com/7v5ASc8.png) 20: Hash Tables
+![cf](http://i.imgur.com/7v5ASc8.png) Hash Tables
 ===
 
 # Learning Objectives
