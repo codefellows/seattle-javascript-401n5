@@ -65,3 +65,21 @@ Connection: close
 
 {"id":"1234123412341324","title":"kata","content":"get 100 points on hacker rank"}
 ```
+
+### Promises
+Promises are objects that represent an asynchronous event that will either succeed or fail. They are an amazing tool for improving readability and data flow control between synchronous and asynchronous code.
+
+##### States of a Promise
+  * **pending** - initial state - not fulfilled or rejected
+  * **fulfilled** - the operation completed successfully
+  * **rejected** - the operation failed
+
+##### Promise Static Methods
+  * `Promise.all(array)` - returns a `Promise` object that fulfills when all of the promises in an array have succeded or one has failed
+  * `Promise.race(array)` - returns a `Promise` object that fulfills when one of the promises in an array has succeded or failed
+  * `Promise.reject(value)` - returns a `Promise` object that is rejected with a given value
+  * `Promise.resolve(value)` - returns a `Promise` object that is resolved with a given value
+
+##### Promise Instance Methods
+  * `catch((err) => {})` - registers a callback for handling a failure
+  * `then((data) => {})` - registers a callback for handling a success
