@@ -27,15 +27,17 @@ describe('api module', () => {
 
   });
 
-  it('should create a note', () => {
+  it('should create a note', (done) => {
 
     const newNote = {title:'milk', content: 'chocolate'};
 
-    return superAgent.post(apiUrl).send(newNote).then(results => {
+    superAgent.post(apiUrl).send(newNote).then(results => {
 
       const note = JSON.parse(results.text);
 
       expect(note.title).toBe('milk');
+
+      done(); // using done argument vs. returning promise but both work
     });
 
   });
