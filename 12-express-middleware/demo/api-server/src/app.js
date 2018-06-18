@@ -52,10 +52,13 @@ let isRunning = false;
 
 // Q: Why do we have a start/stop that we are exposing?
 // A: So that we can start and stop the server while we are testing the routes
+
+let server = null;
+
 module.exports = {
   start: (port) => {
     if(! isRunning) {
-      app.listen(port, (err) => {
+      server = app.listen(port, (err) => {
         if(err) { throw err; }
         isRunning = true;
         debug('Server is up on port', port);
@@ -67,9 +70,9 @@ module.exports = {
   },
 
   stop: () => {
-    app.close( () => {
+
+      server && server.close();
       isRunning = false;
       console.log('Server has been stopped');
-    });
   },
 };

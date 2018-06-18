@@ -11,8 +11,13 @@
 
 // Read and require every file in the "models" directory
 // This allows us to dynamically create and use models with ONE API.
-import requireAll from 'require-dir';
-const models = requireAll('../models');
+// import requireAll from 'require-dir';
+// const models = requireAll('../models');
+const requireAll = require('require-directory');
+const models = requireAll(module, '../models');
+
+console.log('models', models);
+
 /*
   models: {
     'notes': {default: Function()...},
@@ -22,6 +27,8 @@ const models = requireAll('../models');
 export default (req,res,next) => {
   try {
     let model = req && req.params && req.params.model;
+    console.log('try models', model, models);
+    
     if ( model && models[model] && models[model].default ) {
       req.model = models[model].default;
       next();
