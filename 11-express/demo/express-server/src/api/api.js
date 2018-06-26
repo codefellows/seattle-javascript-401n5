@@ -23,9 +23,9 @@ let sendJSON = (res,data) => {
  * @param res
  * @param err
  */
-let serverError = (res,err) => {
+let serverError = (res,err, statusCode) => {
   let error = { error:err };
-  res.statusCode = 500;
+  res.statusCode = statusCode || 500;
   res.statusMessage = 'Server Error';
   res.setHeader('Content-Type', 'application/json');
   res.write( JSON.stringify(error) );
@@ -33,9 +33,8 @@ let serverError = (res,err) => {
 };
 
 router.get('/api/v1/notes', (req,res) => {
-  Notes.fetchAll()
-    .then( data => sendJSON(res,data) )
-    .catch( err => serverError(res,err) );
+  res.statusMessage = 'bad request';
+  res.sendStatus(400);
 });
 
 // Note the split of the fetchAll and fetchOne type of routes
@@ -44,7 +43,7 @@ router.get('/api/v1/notes/:id', (req,res) => {
   if ( req.params.id ) {
     Notes.findOne(req.params.id)
       .then(data => sendJSON(res, data))
-      .catch(err => serverError(res, err));
+      .catch(err => serverError(res, err, 404));
   }
   else {
     serverError(res, 'Record Not Found');
