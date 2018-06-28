@@ -7,6 +7,7 @@
 
 ## Resources
 * Read [intro to jwt](https://jwt.io/introduction/)
+* Optional - Read [Bearer Auth Slides](/17-Bearer-Authorization.pdf)
 
 ## Outline
 
