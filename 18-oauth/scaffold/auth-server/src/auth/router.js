@@ -1,11 +1,12 @@
 'use strict';
 
-import superagent from 'superagent';
 import express from 'express';
+
 const authRouter = express.Router();
 
 import User from './model.js';
 import auth from './middleware.js';
+import oauth from './lib/oauth.js';
 
 // Generally, these will send a Token Cookie and do a redirect.
 // For now, just spew out the token to prove we're ok.
@@ -17,14 +18,17 @@ authRouter.post('/signup', (req, res, next) => {
     .catch(next);
 });
 
-authRouter.get('/signin',auth, (req, res, next) => {
-  res.cookie('Token', req.token);
+authRouter.get('/login',auth, (req, res, next) => {
+  res.cookie('auth', req.token);
   res.send(req.token);
 });
 
-authRouter.get('/oauth/google/code', (req, res, next) => {
+authRouter.get('/oauth', (req, res, next) => {
+
 });
 
+// A little proof of life here, to show how we can protect any
+// route with our auth middleware
 authRouter.get('/showMeTheMoney', auth, (req,res,next) => {
   res.send('Here is all the ca$h');
 });

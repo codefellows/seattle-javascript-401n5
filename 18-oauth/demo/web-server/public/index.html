@@ -100,7 +100,7 @@
               let authstring = btoa(`${username}:${password}`);
               $.ajax({
                 type: "GET",
-                url: "http://localhost:3000/signin",
+                url: "http://localhost:3000/login",
                 async: false,
                 headers: {
                   "Authorization": "Basic " + authstring
@@ -120,8 +120,8 @@
           let googleURL = "https://accounts.google.com/o/oauth2/v2/auth";
 
           let options = {
-            client_id:'560654039720-vl4u273l6hl684o5scfd0r58t531g1vt.apps.googleusercontent.com',
-            redirect_uri: 'http://localhost:3000/oauth/google/code',
+            client_id:'560654039720-5kmgrmq63ctu07hb8e973t589jio17qf.apps.googleusercontent.com',
+            redirect_uri: 'http://localhost:3000/oauth',
             scope: 'email openid profile',
             prompt: 'consent',
             response_type: 'code'
