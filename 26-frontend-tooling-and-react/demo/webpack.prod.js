@@ -13,7 +13,7 @@ webpackProdConfig.plugins = [
 ];
 
 webpackProdConfig.module.rules = [{
-  test: /\.scss$/,
+  test: /\.[s]?css$/,
   use: [
     MiniCssPlugin.loader,
     "css-loader",
