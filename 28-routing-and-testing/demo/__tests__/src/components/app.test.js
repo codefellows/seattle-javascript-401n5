@@ -7,7 +7,7 @@ describe('<App/> (Enzyme Test)', () => {
   it('is alive at application start', () => {
     let app = shallow(<App/>);
     expect(app.find('main').exists()).toBeTruthy();
-    expect(app.find('h2').exists()).toBeTruthy();
+    expect(app.find('Header').exists()).toBeTruthy();
   });
 });
 
