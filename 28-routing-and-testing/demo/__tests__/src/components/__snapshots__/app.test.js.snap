@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App/> (Snapshot Test) renders right 1`] = `
+Array [
+  <header>
+    <h2>
+      Our Basic App
+    </h2>
+  </header>,
+  <main>
+    <h2>
+      Hello World
+    </h2>
+  </main>,
+  <footer>
+    <h3>
+      You hit rock bottom
+    </h3>
+  </footer>,
+]
+`;
