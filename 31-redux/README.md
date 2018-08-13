@@ -16,6 +16,8 @@
 * Read [redux store](http://redux.js.org/docs/basics/Store.html)
 * Read [redux usage with react](http://redux.js.org/docs/basics/UsageWithReact.html)
 
+## Demo
+[Redux demo](https://github.com/codefellows-seattle-javascript-401n5/31-redux-demo)
 ## Outline
 
 ### Redux
