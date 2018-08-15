@@ -7,6 +7,9 @@
 ## Readings
 * Read [combine reducers](http://redux.js.org/docs/api/combineReducers.html)
 
+## Demo
+[Sweet and Savory](https://github.com/codefellows-seattle-javascript-401n5/32-combining-reducers-demo)
+
 ## Outline
 
 ### combineReducers
