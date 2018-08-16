@@ -1,5 +1,6 @@
 import uuid from 'uuid/v1';
-import defaultState from './defaultState';
+
+const defaultState = { sweets : [] };
 
 // Actions
 export const ADD = 'Sweet/ADD';

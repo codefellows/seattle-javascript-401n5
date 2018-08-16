@@ -1,7 +1,5 @@
 import sweetReducer, { addSweet, ADD as ADD_SWEET } from './sweet';
 import savoryReducer, { addSavory, ADD as ADD_SAVORY } from './savory';
-import defaultState from './defaultState';
-
 
 describe('action creators', () => {
 
@@ -38,7 +36,7 @@ describe('sweet reducer', () => {
 
     const action = addSweet(sweet);
 
-    const state = sweetReducer(defaultState, action);
+    const state = sweetReducer(undefined, action);
 
     expect(state.sweets.length).toBe(1);
 
@@ -46,49 +44,11 @@ describe('sweet reducer', () => {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-xdescribe('sweet reducer', () => {
-
-  it('should create add action', () => {
-    const action = addSweet({name:'Snickers'});
-    expect(action.type).toBe('Sweet/ADD');
-  });
-
-  it('should create add sweet', () => {
-    const action = addSweet({name:'Snickers'});
-    const state = sweetReducer(defaultState, action);
-    expect(state.sweets.length).toBe(1);
-
-  });
-});
-
-xdescribe('savory reducer', () => {
-
-  it('should create add action', () => {
-    const action = addSavory({name:'Foi Gras'});
-    expect(action.type).toBe('Savory/ADD');
-  });
+describe('savory reducer', () => {
 
   it('should add savory', () => {
     const action = addSavory({name:'Foi Gras'});
-    const state = savoryReducer(defaultState, action);
+    const state = savoryReducer(undefined, action);
     expect(state.savories.length).toBe(1);
 
   });
