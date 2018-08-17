@@ -14,7 +14,8 @@
 * Skim [basics of hash tables](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/)
 * Skim [hash table wiki](https://en.wikipedia.org/wiki/Hash_table)
 
-## Outline
+## Outline (Skim)
+
 
 ### Hash Tables
 Hash Tables (also called "Hash Maps", or even just a "Dictionary") are an
