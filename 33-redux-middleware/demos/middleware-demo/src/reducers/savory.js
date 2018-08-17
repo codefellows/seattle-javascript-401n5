@@ -13,7 +13,6 @@ export default function reducer(state = defaultState, action) {
 
   switch (type) {
     case ADD:
-      payload.id = uuid(); // this ok or need fresh copy?
       return {
         ...state,
         savories: [...state.savories, payload]
@@ -25,6 +24,7 @@ export default function reducer(state = defaultState, action) {
 
 // Action Creators
 export function addSavory(savory) {
+  savory.id = uuid();
   return {
     type: ADD,
     payload: savory,

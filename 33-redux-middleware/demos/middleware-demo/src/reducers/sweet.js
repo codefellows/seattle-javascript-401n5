@@ -12,11 +12,6 @@ export default function reducer(state = defaultState, action) {
 
   switch (type) {
     case ADD:
-      payload.id = uuid(); // this ok or need fresh copy?
-
-      if(payload.name === 'twizzlers' || payload.name === 'red vines') {
-        payload.name = 'hot tamales';
-      }
       return {
         ...state,
         sweets: [...state.sweets, payload]
@@ -28,6 +23,9 @@ export default function reducer(state = defaultState, action) {
 
 // Action Creators
 export function addSweet(sweet) {
+
+  sweet.id = uuid(); // this ok or need fresh copy?
+  
   return {
     type: ADD,
     payload: sweet

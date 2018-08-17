@@ -22,6 +22,8 @@ const mapDispatchToProps = dispatch => {
     addSavory: savory => {
       const action = addSavory(savory);
       const cancel = dispatch(action);
+
+      // what happens if line below is uncommented?
       // setTimeout(cancel, 1000);
     }
   }
