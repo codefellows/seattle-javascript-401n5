@@ -1,5 +1,6 @@
 
 let reporter = store => next => action => {
+  
   console.log('__ACTION__', action)
   try {
     console.log('__PRE_STATE__', store.getState())

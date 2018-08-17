@@ -22,7 +22,7 @@ const mapDispatchToProps = dispatch => {
     addSavory: savory => {
       const action = addSavory(savory);
       const cancel = dispatch(action);
-      setTimeout(cancel, 1000);
+      // setTimeout(cancel, 1000);
     }
   }
 }
