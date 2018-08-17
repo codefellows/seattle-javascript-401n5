@@ -17,10 +17,12 @@ const SavoryContainer = (props) => {
 
 const mapStateToProps = (state) => ({ savories : state.savoryState.savories });
 const mapDispatchToProps = dispatch => {
+  
   return {
     addSavory: savory => {
       const action = addSavory(savory);
-      dispatch(action);
+      const cancel = dispatch(action);
+      setTimeout(cancel, 1000);
     }
   }
 }

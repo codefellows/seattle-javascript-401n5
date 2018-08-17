@@ -25,9 +25,9 @@ export default function reducer(state = defaultState, action) {
 
 // Action Creators
 export function addSavory(savory) {
-  console.log('addSavory action', savory);
   return {
     type: ADD,
-    payload: savory
+    payload: savory,
+    meta: {delay: 3000},
   }
 }
