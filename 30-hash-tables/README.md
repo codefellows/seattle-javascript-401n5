@@ -3,13 +3,15 @@
 
 # Learning Objectives
 * Students will be able to identify use cases for a hash table
-* Students will be able to implement a hash table
-* Students will be able to implement a custom hash code
-* Students will be able to implement collision handling
+* Students will understand structure of a hash table
+* Students will understand hash code
+* Students will understand need to handle collisions
 
 ## Resources
 * Watch [what is a hash table?](https://www.youtube.com/watch?v=MfhjkfocRR0)
-* Read [basics of hash tables](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/)
+* Read [What you should know about ES6 Maps](https://hackernoon.com/what-you-should-know-about-es6-maps-dc66af6b9a1e)
+	* ES6 has a new Map object that is preferable to using Object as hash table.
+* Skim [basics of hash tables](https://www.hackerearth.com/practice/data-structures/hash-tables/basics-of-hash-tables/tutorial/)
 * Skim [hash table wiki](https://en.wikipedia.org/wiki/Hash_table)
 
 ## Outline
