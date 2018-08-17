@@ -8,6 +8,16 @@
 ## Readings
 * Read [redux middleware](http://redux.js.org/docs/advanced/Middleware.html)
 
+## Demos
+* See demos folder
+
+
+## Debugging Links
+* [Debug config](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#visual-studio-code)
+* [Debug test config](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#debugging-tests-in-visual-studio-code)
+* [Video](https://www.youtube.com/watch?v=UI7dpnVoad8)
+
+
 ## Overview
 
 ### Redux
