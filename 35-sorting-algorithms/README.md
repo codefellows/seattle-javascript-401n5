@@ -5,6 +5,7 @@
 * Students will learn about multiple sorting algorithms
 
 ## Readings and Videos
+* [Video: Bubble Sort](https://www.youtube.com/watch?v=zKrYU6oKT24&feature=youtu.be)
 * [Wikipedia: Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
 * [Video: Merge Sort](http://blog.rubenvicario.com/merge-sort-in-javascript)
 * [Wikipedia: Selection Sort](https://en.wikipedia.org/wiki/Selection_sort)
