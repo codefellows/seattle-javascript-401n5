@@ -23,5 +23,5 @@ Therefore, if we know the user, we can determine their capabilities based on the
 
 
 ## Review Code for  Thursday:
-[ACL React App](https://codesandbox.io/s/rj95o4l9lm)
-[Auth/Login React App](https://codesandbox.io/s/qv35omvxnj)
+- [ACL React App](https://codesandbox.io/s/rj95o4l9lm)
+- [Auth/Login React App](https://codesandbox.io/s/qv35omvxnj)
