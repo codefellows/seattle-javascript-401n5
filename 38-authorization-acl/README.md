@@ -22,3 +22,6 @@ A user is assigned a **role**, and a role has `n` **capabilities** ... therefore
 Therefore, if we know the user, we can determine their capabilities based on their role. Using that information, we can restrict access to any functionality/routes on the express side of things and given a well thought out React component, we can hide things in the UI or alter behavior based on the same set of rules
 
 
+## Review Code for  Thursday:
+[ACL React App](https://codesandbox.io/s/rj95o4l9lm)
+[Auth/Login React App](https://codesandbox.io/s/qv35omvxnj)
