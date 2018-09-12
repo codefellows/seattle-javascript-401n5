@@ -5,10 +5,10 @@ The local bowling alley is celebrating its 100th birthday. For the festivities t
 Input: Data structure of your choice but keep in mind efficient insertions/deletions
 
 	Sally : 221
-	Jerome : 185
+	Jerome : 85
 	Rafael : 257
 	Holly : 91
-	Jean : 288
+	Jean : 88
 	Lee : 106
 	Pat : 244
 	
