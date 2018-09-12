@@ -1,6 +1,6 @@
 # Algorithm Lanes 100th Birthday Party
 
-The local bowling alley is celebrating its 100th birthday. For the festivities they have held a bowling tournament. Of course they'd like to know the bowler with highest score, but also the bowler who had a score of exactly 100, or the closest higher score. They need an algorithm that will print the name and score of the winning bowler as well as the name and score of bowler with score that is 100 or closest higher score.
+The local bowling alley is celebrating its 100th birthday. For the festivities they have held a bowling tournament. Of course they'd like to know the bowler with highest score, but also the bowlers who had scores of 100 or greater. They need an algorithm that will print the name and score of the winning bowler as well as the names and scores of bowlers with scores 100 or above.
 
 Input: Data structure of your choice but keep in mind efficient insertions/deletions
 
