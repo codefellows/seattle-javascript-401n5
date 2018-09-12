@@ -16,7 +16,7 @@ Input: Data Structure selected by you
 
 
 ---
-+++
+
 
 # Cadillac vs Ferrari
 
