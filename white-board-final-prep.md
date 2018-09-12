@@ -1,8 +1,8 @@
 # Algorithm Lanes 100th Birthday Party
 
-The local bowling alley is celebrating it's 100th birthday. For the festivities they have held a bowling tournament. Of course they'd like to know the bowler with highest score, but also the bowler who had a score of exactly 100, or the closest to it. They need an algorithm that will print the name and score of winning bowler as well as name and score of bowler with score closest to 100.
+The local bowling alley is celebrating its 100th birthday. For the festivities they have held a bowling tournament. Of course they'd like to know the bowler with highest score, but also the bowler who had a score of exactly 100, or the closest to it. They need an algorithm that will print the name and score of the winning bowler as well as the name and score of bowler with score closest to 100.
 
-Input: Data Structure selected by you
+Input: Binary Search Tree
 
 	Sally : 221
 	Jerome : 185
@@ -26,7 +26,9 @@ Cadillacs are built for comfort, Ferraris are built for speed. In fact the Ferra
 
 Each node has a value of it's track section number.
 
-If the Ferrari starts first and is able to move 2 nodes each turn, then Cadillac moves 1 node each turn, at what section number will Ferrari circle around to meet the Cadillac? 
+If the Ferrari starts first and is able to move 2 nodes each turn, then Cadillac moves 1 node each turn, at what section number will Ferrari circle around to meet the Cadillac?
+
+Visualize and step through your solution. The point is NOT to do in head.
 
 
 
